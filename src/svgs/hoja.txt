@@ -1,0 +1,71 @@
+      <div className={x.container}>
+        <div className={x.containt}>
+          <div className={x.svgLogo}>
+            <InicialLogo style={{ width: "100%" }} />
+          </div>
+
+          <div className={x.formContainer}>
+            {" "}
+            {/* Inicia el formulario */}
+            <div className={x.formContaint}>
+              {/* <div className={x.headerFormContainer}>
+                <h1>
+                  <CompanyLogo />
+                </h1>
+              </div> */}
+              <form>
+                <div className={x.formInputsAndBtns}>
+                  <h2 className={x.formTitle}>Login</h2>
+                  <div className={x.inputGroup}>
+                    <input
+                      type="text"
+                      id="username"
+                      ref={usernameRef}
+                      required
+                    />
+                    <label htmlFor="username">Nombre</label>
+                  </div>
+                  <div className={x.rowGroup}>
+                    <div className={x.inputGroup}>
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                        name="password"
+                        ref={passwordRef}
+                        required
+                      />
+                      <label htmlFor="password">Contraseña</label>
+                      {showPassword ? (
+                        <div className={x.eyeContainer}>
+                          <IoMdEye
+                            className={x.eye}
+                            onClick={() => setShowPassword(!showPassword)}
+                          />
+                        </div>
+                      ) : (
+                        <div>
+                          <IoMdEyeOff
+                            className={x.eye}
+                            onClick={() => setShowPassword(!showPassword)}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className={x.btnLoginContainer}>
+                    <button className={x.btnLogin} onClick={fetchLogin}>
+                      {/* {isLoading && <div className={x.fill}></div>} */}
+                      Ingresar
+                    </button>
+                  </div>
+                  {error && (
+                    <small style={{ color: "red", marginTop: "10px" }}>
+                      {error}
+                    </small>
+                  )}
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>

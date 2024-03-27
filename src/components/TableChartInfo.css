@@ -1,0 +1,72 @@
+
+.table-container {
+  background-color: #FFFFFF;
+}
+
+  .fixTableHead {
+    overflow-y: auto;
+    height: 200px;
+  }
+  
+  .head-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    border-top: 2.5px solid black;
+  }
+  
+  .arrow-down-icon {
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #d6dce1;
+  }
+  
+  table {
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    /* border-radius: 10px; */
+    overflow: hidden;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px;
+    background: black;
+    border-bottom: 1px solid #fff;
+    color: #eceff2;
+  }
+  
+  td {
+    padding: 8px;
+    /* background: red; */
+    border-bottom: 1px solid #d6dce1;
+    color: #546775;  
+    font-weight: bold;
+  }
+
+  tr:hover td {
+    background: #eceff2;
+    color: #353d45;
+  }
+
+  .collapsed {
+    height: 0;
+    overflow: hidden;
+  }
+
+  tr:nth-child(even) {
+  background-color: #FFFFFF; /* Color de fondo blanco */
+}
+
+/* Estilo para las filas impares */
+tr:nth-child(odd) {
+  background-color: #F5F5F5; /* Color de fondo gris */
+}
